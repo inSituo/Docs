@@ -30,20 +30,22 @@
     0. Content
 
 0. Answer
-    0. Question ID
-    0. Last Activity Timestamp
-    0. Content Revisions
-        0. Timestamp
-        0. User ID
-        0. Anonymous?
-        0. Locations
-            0. Coordinates
-            0. Path
-        0. Content
-    0. Ranking
-    0. Thanks User IDs
-    0. Thumb-ups User IDs
-    0. Thumb-downs User IDs
+    0. `qid`: Question ID
+    0. `ts`: Last Activity Timestamp
+    0. `revs`: Content Revisions
+        0. `ts`: Timestamp
+        0. `uid`: User ID
+        0. `anon`: Anonymous?
+        0. `locs`: Locations
+            0. `crd`: Coordinates
+                0. `lat`
+                0. `lon`
+            0. `path`: Path
+        0. `content`: Content
+    0. `ranking`: Ranking
+    0. `thnksuids`: Thanks User IDs
+    0. `thupsuids`: Thumb-ups User IDs
+    0. `thdwnuids`: Thumb-downs User IDs
 
 0. Answer Comment
     0. Answer ID
@@ -75,6 +77,7 @@
 # Denormalized Data
 
 0. Question
+    0. Question ID
     0. Timestamp
     0. Location
         0. Coordinates
@@ -90,11 +93,28 @@
 0. Question's "Latest X" Comments in "Page Y"
     0. User ID
     0. User display name
+    0. Timestamp
     0. Content
+
+0. Answer
+    0. Answer ID
+    0. User ID
+    0. User display name
+    0. Timestamp
+    0. Locations
+        0. Coordinates
+        0. Path
+    0. Content
+    0. Ranking
+    0. Thanks
+    0. Thumbups
+    0. Thumbdowns
 
 0. Question's "Top X" Answers in "Page Y"
     0. Answers
         0. Answer ID
+        0. User ID
+        0. User display name
         0. Timestamp
         0. Locations
             0. Coordinates
