@@ -32,10 +32,10 @@
 0. Answer
     0. `qid`: Question ID
     0. `ts`: Last Activity Timestamp
+    0. `anon`: Anonymous?
     0. `revs`: Content Revisions
         0. `ts`: Timestamp
         0. `uid`: User ID
-        0. `anon`: Anonymous?
         0. `locs`: Locations
             0. `crd`: Coordinates
                 0. `lat`
@@ -98,9 +98,13 @@
 
 0. Answer
     0. Answer ID
-    0. User ID
-    0. User display name
-    0. Timestamp
+    0. Original user ID
+    0. Original user display name
+    0. Last revision user ID
+    0. Last revision user display name
+    0. Anonymous?
+    0. Last activity timestamp
+    0. First revision timestamp
     0. Locations
         0. Coordinates
         0. Path
